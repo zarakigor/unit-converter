@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" />
+        <title>Unit Converter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div class="container">
+            <section class="first">
+                <h3>Metric/Imperial unit conversion</h3>
+                <input
+                    id="value"
+                    type="number"
+                    min="0"
+                    value="20"
+                    onkeyup="calculate(this)"
+                />
+            </section>
+
+            <section class="second">
+                <div>
+                    <p class="subtitle p-top">Length (Meter/Feet)</p>
+                    <p>
+                        <span class="number">0</span> meters =
+                        <span id="meter-feet">0.000</span> feet |
+                        <span class="number">0</span> feet =
+                        <span id="feet-meter">0.000</span> meters
+                    </p>
+                </div>
+                <div>
+                    <p class="subtitle">Volume (Liters/Gallons)</p>
+                    <p>
+                        <span class="number">0</span> liters =
+                        <span id="liter-gallon">0.000</span> gallons |
+                        <span class="number">0</span> gallons =
+                        <span id="gallon-liter">0.000</span> liters
+                    </p>
+                </div>
+                <div>
+                    <p class="subtitle">Mass (Kilograms/Pounds)</p>
+                    <p>
+                        <span class="number">0</span> kilos =
+                        <span id="kilo-pound">0.000</span> pounds |
+                        <span class="number">0</span> pounds =
+                        <span id="pound-kilo">0.000</span> kilos
+                    </p>
+                </div>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
